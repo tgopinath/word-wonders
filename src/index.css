@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fredoka", "Baloo 2", ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+  --font-sans: "Nunito", ui-rounded, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+  font-family: var(--font-sans);
+  color: #2B1F4A;
+  background: #FFF9F0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 10% 0%, #FFE9D6 0, transparent 35%),
+    radial-gradient(circle at 95% 10%, #E6E0FF 0, transparent 30%),
+    #FFF9F0;
+  background-attachment: fixed;
+}
+
+/* Emoji fallback art gets a soft 3D drop shadow */
+.emoji-3d {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  filter: drop-shadow(0 8px 6px rgba(60, 30, 90, 0.18));
+  display: inline-block;
+}
+
+button { cursor: pointer; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
