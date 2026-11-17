@@ -2,6 +2,8 @@
 
 An animated vocabulary app for children aged 3–10. React + TypeScript + Vite + Tailwind CSS v4 + Framer Motion.
 
+Live: https://word-wonders.vercel.app (Vercel, deploys on push to `main`).
+
 ```bash
 npm install
 npm run dev      # http://localhost:5173
