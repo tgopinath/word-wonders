@@ -35,7 +35,7 @@ export function WordThumb({ item, color, to }: { item: VocabItem; color: string;
   const fav = progress.favorites.includes(item.id)
   return (
     <Link to={to ?? `/word/${item.id}`} onClick={() => sfx.pop()} aria-label={`${item.word}${w?.explored ? ', explored' : ''}${fav ? ', favorite' : ''}`}
-      className="group relative flex flex-col items-center rounded-[26px] bg-white p-3 pb-4 shadow-[0_6px_0_rgba(0,0,0,0.05)] transition-transform hover:-translate-y-1 focus-visible:outline-4 focus-visible:outline-sky-400">
+      className="group relative flex flex-col items-center rounded-[26px] bg-white p-3 pb-4 ring-1 ring-[#ECE6F5] shadow-[0_6px_0_rgba(0,0,0,0.05)] transition-transform hover:-translate-y-1 focus-visible:outline-4 focus-visible:outline-sky-400">
       {w?.explored && <span className="absolute left-2 top-2 grid h-7 w-7 place-items-center rounded-full bg-[#4CC26B] text-sm text-white" aria-label="explored">✓</span>}
       {fav && <span className="absolute right-2 top-2 text-lg" aria-label="favorite">💖</span>}
       <span className="emoji-3d grid h-20 place-items-center text-6xl transition-transform group-hover:scale-110 group-hover:-rotate-6 sm:h-24 sm:text-7xl" aria-hidden>

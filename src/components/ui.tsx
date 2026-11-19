@@ -28,12 +28,12 @@ export function Button({ tone = 'sun', size = 'md', className = '', children, on
 }
 
 export function Card({ children, className = '', style }: { children: ReactNode; className?: string; style?: CSSProperties }) {
-  return <div className={`rounded-[28px] bg-white shadow-[0_8px_30px_rgba(80,60,140,0.08)] ${className}`} style={style}>{children}</div>
+  return <div className={`rounded-[28px] bg-white ring-1 ring-[#ECE6F5] shadow-[0_8px_30px_rgba(80,60,140,0.08)] ${className}`} style={style}>{children}</div>
 }
 
 export function BackLink({ to, label = 'Back' }: { to: string; label?: string }) {
   return (
-    <Link to={to} onClick={() => sfx.tap()} className="inline-flex items-center gap-1 rounded-full bg-white px-4 py-2 font-display font-semibold text-[#3B2F55] shadow-sm min-h-11 focus-visible:outline-4 focus-visible:outline-sky-400" aria-label={label}>
+    <Link to={to} onClick={() => sfx.tap()} className="inline-flex items-center gap-1 rounded-full bg-white px-4 py-2 font-display font-semibold text-[#3B2F55] ring-1 ring-[#ECE6F5] shadow-sm min-h-11 focus-visible:outline-4 focus-visible:outline-sky-400" aria-label={label}>
       <span aria-hidden className="text-xl">←</span> {label}
     </Link>
   )

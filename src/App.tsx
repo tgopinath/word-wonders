@@ -47,7 +47,7 @@ function Shell() {
       <NavBar />
       <BadgeToast />
       {overLimit && (
-        <div className="fixed inset-0 z-[70] grid place-items-center bg-[#FFF9F0] p-6 text-center" role="dialog" aria-modal="true" aria-label="Break time">
+        <div className="fixed inset-0 z-[70] grid place-items-center bg-white p-6 text-center" role="dialog" aria-modal="true" aria-label="Break time">
           <div>
             <p className="text-8xl" aria-hidden>🌙</p>
             <h1 className="mt-4 font-display text-4xl font-bold text-[#2B1F4A]">Time for a break!</h1>
